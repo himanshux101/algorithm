@@ -48,6 +48,15 @@ class Graph():
             if i not in visited:
                 self._dfs_scc(i, visited, s, leader)
 
+    def iterative_finishing_time(self):
+        visited = set()
+        finishing_times = []
+        node_stack = []
+        for i in self._reverse_graph.keys():
+            if i in visited:
+                continue
+            node_stack = [i]
+
 
 
 
