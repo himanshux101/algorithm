@@ -16,5 +16,5 @@ def DFS(graph, u, visited):
     if visited[i-1] == False:
       DFS(graph, i, visited)
 
-graph = big()
+graph = scc_graph()
 DFSLoop(graph)
