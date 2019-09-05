@@ -1,7 +1,6 @@
 """
 DFS uses stack 
 """
-from graph import *
 
 # number graph zero indexed 
 def DFSLoop(graph):
@@ -21,7 +20,6 @@ def DFS(graph, u, visited):
 BFS uses stack 
 """
 from collections import defaultdict, deque
-from graph import *
 
 # number graph zero indexed
 def BFS(graph, s):
@@ -67,6 +65,4 @@ def BFS_shortes_path(graph, s, v):
 
     print("distance from {} to {} is {}".format(s, v, dist[v]))
 
-graph = big()
-print(len(graph))
-BFS_shortes_path(graph, 1, 4)
+
